@@ -19,7 +19,7 @@ export default function Home({ allArticles  }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>,
         <ul className={utilStyles.list}>
           {allArticles.map(({ id, name, slug }) => (
             <li className={utilStyles.listItem} key={id}>
