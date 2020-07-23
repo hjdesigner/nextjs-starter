@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'pocnode'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a64fa3d62a5d419f862de1aa0a520a22 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5df22de4a6194da2a2d0d337d5c2deff }}
         package: .
