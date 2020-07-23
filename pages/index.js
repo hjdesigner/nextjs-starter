@@ -24,7 +24,7 @@ export default function Home({ allArticles  }) {
           {allArticles.map(({ id, name, slug }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${slug}`}>
-                <a>{name}</a>
+                <a>{name},</a>
               </Link>
             </li>
           ))}
