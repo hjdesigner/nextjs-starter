@@ -1,0 +1,108 @@
+{
+  "id": "/subscriptions/e07b06d1-96aa-42b3-9e2a-e7ef43d457eb/resourceGroups/mystaticsite/providers/Microsoft.Resources/deployments/Microsoft.Web-WebApp-Portal-8a48edf9-a337",
+  "name": "Microsoft.Web-WebApp-Portal-8a48edf9-a337",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/e07b06d1-96aa-42b3-9e2a-e7ef43d457eb/resourcegroups/mystaticsite/providers/Microsoft.Web/sites/pocNode",
+    "marketplaceItemId": "Microsoft.WebSite"
+  },
+  "properties": {
+    "templateHash": "10585367527398840059",
+    "parameters": {
+      "subscriptionId": {
+        "type": "String",
+        "value": "e07b06d1-96aa-42b3-9e2a-e7ef43d457eb"
+      },
+      "name": {
+        "type": "String",
+        "value": "pocNode"
+      },
+      "location": {
+        "type": "String",
+        "value": "Brazil South"
+      },
+      "hostingEnvironment": {
+        "type": "String",
+        "value": ""
+      },
+      "hostingPlanName": {
+        "type": "String",
+        "value": "ASP-mystaticsite-968e"
+      },
+      "serverFarmResourceGroup": {
+        "type": "String",
+        "value": "mystaticsite"
+      },
+      "alwaysOn": {
+        "type": "Bool",
+        "value": false
+      },
+      "sku": {
+        "type": "String",
+        "value": "Free"
+      },
+      "skuCode": {
+        "type": "String",
+        "value": "F1"
+      },
+      "workerSize": {
+        "type": "String",
+        "value": "0"
+      },
+      "workerSizeId": {
+        "type": "String",
+        "value": "0"
+      },
+      "numberOfWorkers": {
+        "type": "String",
+        "value": "1"
+      },
+      "linuxFxVersion": {
+        "type": "String",
+        "value": "NODE|12-lts"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2020-07-23T12:43:12.7196594Z",
+    "duration": "PT4.9568782S",
+    "correlationId": "73a9c6f4-f42a-4bc4-ba7c-3d3c8120a65f",
+    "providers": [
+      {
+        "namespace": "Microsoft.Web",
+        "resourceTypes": [
+          {
+            "resourceType": "sites",
+            "locations": [
+              "brazilsouth"
+            ]
+          },
+          {
+            "resourceType": "serverfarms",
+            "locations": [
+              "brazilsouth"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e07b06d1-96aa-42b3-9e2a-e7ef43d457eb/resourceGroups/mystaticsite/providers/Microsoft.Web/serverfarms/ASP-mystaticsite-968e",
+            "resourceType": "Microsoft.Web/serverfarms",
+            "resourceName": "ASP-mystaticsite-968e"
+          }
+        ],
+        "id": "/subscriptions/e07b06d1-96aa-42b3-9e2a-e7ef43d457eb/resourceGroups/mystaticsite/providers/Microsoft.Web/sites/pocNode",
+        "resourceType": "Microsoft.Web/sites",
+        "resourceName": "pocNode"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
